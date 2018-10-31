@@ -244,10 +244,7 @@ var handle_get = function (req, res, next) {
     console.log( "Get: ..." ) ;
     ts = new Date().getTime()
     console.log( ts )
-    console.log("SHIVANI!");
-    console.log(db_host);
-    console.log(db_port);
-    console.log("SHIVANI!");
+
     state = "no-coin" ;
     page( req, res, state, ts ) ;
 }
