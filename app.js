@@ -59,7 +59,7 @@ var db_port = (process.env.mongodb_port || "27017" ) ;
 var db_user = (process.env.mongodb_user || "cmpe281" ) ;
 var db_pwd  = (process.env.mongodb_pwd  || "cmpe281" ) ;
 var db_name = (process.env.mongodb_name || "test" ) ;
-  
+
 
 var db = new DB(db_name,
                 new DB_Server( db_host, db_port,
@@ -244,6 +244,10 @@ var handle_get = function (req, res, next) {
     console.log( "Get: ..." ) ;
     ts = new Date().getTime()
     console.log( ts )
+    console.log("SHIVANI!");
+    console.log(db_host);
+    console.log(db_port);
+    console.log("SHIVANI!");
     state = "no-coin" ;
     page( req, res, state, ts ) ;
 }
